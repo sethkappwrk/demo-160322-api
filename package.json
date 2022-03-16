@@ -1,0 +1,24 @@
+{
+  "name": "demo-api",
+  "version": "1.0.0",
+  "description": "Demo BE Rest Api",
+  "main": "server.js",
+  "author": "Seth",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js --exec babel-node"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.6",
+    "mongoose-paginate-v2": "^1.6.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "nodemon": "^2.0.15"
+  }
+}
