@@ -36,7 +36,7 @@ router.get("/:id", (req, res) => {
     if (err || !contact)
       return res.status(400).json(error(ERROR.BAD_REQUEST, res.statusCode));
     return res
-      .status(201)
+      .status(200)
       .json(success(SUCCESS.OK, { contact }, res.statusCode));
   });
 });
@@ -53,7 +53,7 @@ router.post("/", async (req, res) => {
       return res.status(400).json(error(err));
     }
     return res
-      .status(200)
+      .status(201)
       .json(success(SUCCESS.CONTACT_CREATED, { contact }, res.statusCode));
   });
 });
