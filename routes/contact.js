@@ -80,7 +80,7 @@ router.delete("/:id", (req, res) => {
     if (err)
       return res.status(400).json(error(ERROR.BAD_REQUEST, res.statusCode));
     res
-      .status(200)
+      .status(204)
       .json(success(SUCCESS.OK, SUCCESS.CONTACT_DELETED, res.statusCode));
   });
 });
